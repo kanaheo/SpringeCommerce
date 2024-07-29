@@ -78,4 +78,13 @@ public class UserService {
 			throw new UserNotFoundException("Cloud not find any user with Id" + id);
 		}
 	}
+	
+	public void delete(Integer id) throws UserNotFoundException {
+		Long countById = userRepo.countById(id);
+		if( countById == null || countById == 0 ) {
+			throw new UserNotFoundException("Cloud not find any user with Id" + id);
+		}
+		
+		userRepo.deleteById(id);
+	}
 }
