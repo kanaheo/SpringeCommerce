@@ -1,1 +1,7 @@
 /.metadata/
+
+/ShopmeWebParent/ShopmeBackEnd/user-photos/*/*.png
+
+/ShopmeBackEnd/user-photos/*
+
+/ShopmeBackEnd/user-photos/
